@@ -571,17 +571,24 @@ footer a {
 
 
     /* nine games section styles  */
+
+
+    .nine_Games {
+        gap: 3px;
+        row-gap: 30px;
+    
+    }
     .Buttons a {
         gap: 5px;
         align-items: center;
-        font-size: 10px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 400;
     }
     
     .Buttons {
         padding: 5px;
     }
-    
+
     .Buttons a img{
         width: 20px;
     }
