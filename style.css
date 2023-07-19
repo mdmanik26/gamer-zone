@@ -347,7 +347,7 @@ li a {
 }
 
 .nine_Games {
-    max-width: 1440px;
+    max-width: 1420px;
     margin: 200px auto;
     display: flex;
     gap: 25px;
@@ -571,7 +571,20 @@ footer a {
 
 
     /* nine games section styles  */
-   
+    .Buttons a {
+        gap: 5px;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .Buttons {
+        padding: 5px;
+    }
+    
+    .Buttons a img{
+        width: 20px;
+    }
 
     /* nine games section styles  */
 
