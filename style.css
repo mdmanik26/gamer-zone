@@ -8,8 +8,14 @@
 header {
     background: #f8f8f89e;
 }
-nav{
+
+nav {
     background: white;
+}
+
+main section {
+    max-width: 1440px;
+    margin: auto;
 }
 
 .main_Nav {
@@ -82,6 +88,10 @@ li a {
 
 /* nav section styles  ends here */
 
+
+
+
+
 /* banner section styles starts here */
 .banner {
     max-width: 1440px;
@@ -90,7 +100,8 @@ li a {
     justify-content: space-between;
     align-items: center;
 }
-.banner_data{
+
+.banner_data {
     background-image: url(./images/Group_14.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,44 +138,221 @@ li a {
     font-style: normal;
     font-weight: 500;
 }
-.lists{
+
+.lists {
     text-align: left;
     margin: 0px auto 25px auto;
     width: 350px;
 }
-.btn{
-   padding: 20px 40px; 
-   border-radius: 30px;
-   border: none;
-   color: white;
-   font-size: 1.2rem;
-   cursor: pointer;
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
-.pink_btn{
+
+.pink_btn {
     background: #FF42A5;
     margin-right: 15px;
 }
-.sky_btn{
+
+.sky_btn {
     background: #4EC5F7;
 }
-.banner_Image{
+
+.banner_Image {
     width: 50%;
     display: flex;
     justify-content: end;
 }
-.banner_Image img{
+
+.banner_Image img {
     width: 85%;
 
+}
+
+/* banner section styles ends here */
+
+
+/* cards section styles starts here */
+.cards_Title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cards_Info {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
+.Cards_header {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    margin-top: 94px;
+}
+
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card_caption {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.cards {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hover {
+    width: 342px;
+    height: 400px;
+    background: rgb(28 25 25 / 71%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F948B2;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+    transition: .3s linear .2s;
+    opacity: 0;
+
+}
+
+.inner {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.icon {
+    color: white;
+    font-size: 3rem;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.watch {
+    color: #F948B2;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.Hover_Effect {
+    position: relative;
+}
+
+.Hover_Effect:hover .hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* cards section styles ends here */
+
+
+
+
+
+/* play games section styles starts here */
+.Play_games {
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_Side {
+    width: 60%;
+    min-height: 300px;
+}
+
+.Info_Side {
+    max-width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.Inner_2{
+    max-width: 90%;
+}
+
+.Position_Pic {
+    max-width: 80%;
+    position: relative;
+}
+
+.Big_Pic img {
+    width: 100%;
+}
+
+.choto_Pic {
+    max-width: 47%;
+    position: absolute;
+    bottom: -138px;
+    right: -131px;
+}
+
+.choto_Pic img {
+    width: 100%;
+}
+
+.play_Title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.design_text {
+    color: #F948B2;
+}
+
+.design_2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.play_Info {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* play games section styles ends here */
+
+/* Nine games sections style starts here */
+
+
+.nine_Games{
+    min-height: 200px;
+    border: 1px solid black;
+    margin: 200px auto;
 }
 
 
 
 
-/* banner section styles ends here */
 
 
 
-
+/* Nine games sections style ends here */
 
 
 
@@ -195,25 +383,72 @@ li a {
 
 
 
-    .banner{
+    .banner {
         flex-direction: column;
     }
-    .banner_data{
+
+    .banner_data {
         width: 100%;
         padding: 30px 10px;
         margin-left: 0px;
     }
-    .banner_Image img{
+
+    .banner_Image img {
         width: 85%;
-    
+
     }
-    .banner_Image{
+
+    .banner_Image {
         width: 100%;
         justify-content: center;
-        
+
+    }
+
+    .cards {
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+
+    .single_Card {
+        text-align: center;
+    }
+
+    /* play games styles */
+    .Play_games {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .choto_Pic {
+        max-width: 60%;
+        bottom: -125px;
+        right: -85px;
     }
 
 
+.image_Side {
+    width: 100%;
+}
+
+.Position_Pic {
+    max-width: 80%;
+
+}
+
+
+.Info_Side {
+    max-width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+}
+.Inner_2{
+    max-width: 100%;
+    text-align: center;
+}
+ /* play games styles */
 
 }
 
@@ -229,26 +464,74 @@ li a {
 
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
-    .banner_data{
+
+    .banner_data {
         width: 100%;
         padding: 100px 0px;
         margin-left: 0px;
     }
-    .banner_Image img{
+
+    .banner_Image img {
         width: 85%;
-    
+
     }
-    .banner_Image{
+
+    .banner_Image {
         width: 100%;
         justify-content: center;
-        
+
+    }
+
+
+    .cards {
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+
+    .single_Card {
+        text-align: center;
     }
 
 
 
+      /* play games styles */
+      .Play_games {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 50px;
+
+    }
+
+    .choto_Pic {
+        max-width: 50%;
+        bottom: -100px;
+        right: -60px;
+    }
+
+
+.image_Side {
+    width: 100%;
+}
+
+.Position_Pic {
+    max-width: 90%;
+
+}
+
+
+.Info_Side {
+    max-width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+}
+.Inner_2{
+    max-width: 100%;
+    text-align: center;
+}
+ /* play games styles */
 
 
 }
