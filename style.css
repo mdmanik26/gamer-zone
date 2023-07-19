@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: work sans;
+}
+
+/* nav section styles starts here */
+header {
+    background: #f8f8f89e;
+}
+nav{
+    background: white;
+}
+
+.main_Nav {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Logo_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Logo_container img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.Heading {
+    color: #0B0223;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.zone {
+    color: #FF42A5;
+}
+
+.main_Ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_Ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bfbbc98c;
+    padding: 10px 0px 10px 20px;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+li a {
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.youtube {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.tiktok {
+    font-size: 1.5rem;
+
+}
+
+/* nav section styles  ends here */
+
+/* banner section styles starts here */
+.banner {
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_data{
+    background-image: url(./images/Group_14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 129px 100px;
+    width: 50%;
+    margin-left: -270px;
+}
+
+.datas {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+
+}
+
+.play_like {
+    color: #0B0223;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.banner_Title {
+    text-align: center;
+    font-size: 5.9rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.list_Item {
+    color: #534C64;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.lists{
+    text-align: left;
+    margin: 0px auto 25px auto;
+    width: 350px;
+}
+.btn{
+   padding: 20px 40px; 
+   border-radius: 30px;
+   border: none;
+   color: white;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+.pink_btn{
+    background: #FF42A5;
+    margin-right: 15px;
+}
+.sky_btn{
+    background: #4EC5F7;
+}
+.banner_Image{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.banner_Image img{
+    width: 85%;
+
+}
+
+
+
+
+/* banner section styles ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive css starts here */
+
+/* for large mobile max-width:425px styles starts */
+@media screen and (max-width:425px) {
+    .main_Nav {
+        flex-direction: column;
+
+    }
+
+    .main_Ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .Logo_container {
+        margin-bottom: 20px;
+    }
+
+
+
+    .banner{
+        flex-direction: column;
+    }
+    .banner_data{
+        width: 100%;
+        padding: 30px 10px;
+        margin-left: 0px;
+    }
+    .banner_Image img{
+        width: 85%;
+    
+    }
+    .banner_Image{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+
+
+}
+
+/* for large mobile max-width:425px styles ends */
+
+
+/* for tablet  max-width:768px; styles starts */
+
+@media screen and (max-width:768px) {
+    .main_Nav {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner_data{
+        width: 100%;
+        padding: 100px 0px;
+        margin-left: 0px;
+    }
+    .banner_Image img{
+        width: 85%;
+    
+    }
+    .banner_Image{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+
+
+
+
+}
+
+
+
+/* for tablet min-width:426px; max-width:960px; styles ends */
+
+
+
+
+
+
+
+
+
+/* Responsive css ends here */
